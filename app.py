@@ -3,7 +3,7 @@ import os
 import random
 import time
 
-WIDTH, HEIGHT = 750, 750
+WIDTH, HEIGHT = 550, 550
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("SIG-")
 
