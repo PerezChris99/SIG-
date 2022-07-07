@@ -4,7 +4,7 @@ import random
 import time
 pygame.font.init()
 
-WIDTH, HEIGHT = 600, 550
+WIDTH, HEIGHT = 800, 750
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("SIG-")
 
@@ -26,12 +26,29 @@ YELLOW_LASER = pygame.image.load(os.path.join("assets", "pixel_laser_yellow.png"
 #background image
 BG = pygame.transform.scale(pygame.image.load(os.path.join("assets", "background-black.png")), (WIDTH, HEIGHT))
 
+class Ship:
+    def __init__(self, x, y, health=100):
+        self.x = x
+        self.y = y
+        self.health = health
+        self.ship_img = None
+        self.laser_img = None
+        self.lasers = []
+        self.cool_down_counter = 0
+
+    def draw(self, window):
+        pygame.draw.rect(window, (255,0,0), (self.x, self.y, 50, 50))
+
+
 def main():
     run = True
     FPS = 65
     level = 1
     lives = 5
-    main_font = pygame.font.SysFont("old english text mt", 50)
+    main_font = pygame.font.SysFont("comicsans", 50)
+
+    ship = Ship(300, 650)
+
     clock = pygame.time.Clock()
 
     def redraw_window():
@@ -44,6 +61,8 @@ def main():
         WIN.blit(lives_label, (10, 10))
         WIN.blit(level_label, (WIDTH - level_label.get_width() - 10, 10))
 
+        ship.draw(WIN)
+
         pygame.display.update()
 
     while run:
@@ -54,5 +73,6 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
             #if event.type == pygame.KEYDOWN
+
 main()
 
