@@ -46,7 +46,7 @@ def main():
     level = 1
     lives = 5
     main_font = pygame.font.SysFont("comicsans", 50)
-
+    player_vel = 5
     ship = Ship(300, 650)
 
     clock = pygame.time.Clock()
@@ -72,7 +72,16 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
-            #if event.type == pygame.KEYDOWN
+
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_a]: #move to the left
+            ship.x -= player_vel
+        if keys[pygame.K_d]: #move to the right
+            ship.x += player_vel
+        if keys[pygame.K_w]: #move up
+            ship.y -= player_vel
+        if keys[pygame.K_s]: #move down
+            ship.y += player_vel
 
 main()
 
