@@ -26,3 +26,8 @@ pygame
 os
 random
 time
+
+5.CREATING VIRTUAL ENV (in windows)
+type in cmd, within the project folder;
+- python -m venv env (this is to start virtual environment)
+- env\Scripts\activate.bat
