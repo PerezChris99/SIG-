@@ -8,7 +8,6 @@ WIDTH, HEIGHT = 800, 750
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("SIG-")
 
-
 #loading images
 RED_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_red_small.png"))
 GREEN_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_green_small.png"))
@@ -44,7 +43,6 @@ class Laser:
 
     def collision(self, obj):
         return collide(obj, self)
-
 
 class Ship:
     COOLDOWN = 30
@@ -185,8 +183,7 @@ def main():
         if lost:
             lost_label = lost_font.render("You lost!", 1, (255,255,255))
             WIN.blit(lost_label, (WIDTH/2 - lost_label.get_width()/2, 350))
-
-
+            
         pygame.display.update()
 
     while run:
