@@ -36,3 +36,5 @@ type in cmd, within the project folder;
 NB: install pygame within the virtual environment to avoid conflicting with the real system
 
 - pip install pygame
+
+SOON MAKING THE GAME EXECUTABLE
