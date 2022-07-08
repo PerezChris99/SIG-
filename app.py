@@ -45,7 +45,7 @@ class Laser:
         return collide(obj, self)
 
 class Ship:
-    COOLDOWN = 30
+    COOLDOWN = 5
 
     def __init__(self, x, y, health=100):
         self.x = x
