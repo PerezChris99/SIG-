@@ -43,3 +43,7 @@ DISCLAIMER:
 the game wasnt initially my idea, but im learning from it.
 
 the purpose of this game was and is to polish up my python skills, both in structured and oop
+
+6. IDE USED;
+visual studio code
+
