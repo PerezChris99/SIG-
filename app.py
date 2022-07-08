@@ -111,6 +111,10 @@ class Player(Ship):
                         objs.remove(obj)
                         self.lasers.remove(laser)
 
+    def healthbar(self):
+        pygame.draw.rect(window, (255,0,0), (self.x, self.y + self.img.get.height() + 10, self.ship_img.get_width(), 10))
+        pygame.draw.rect(window, (0,255,0), (self.x, self.y + self.img.get.height() + 10, self.ship_img.get_width() * (1 - ((self.max_health - self.health)/self.max_health)), 10))
+
 class Enemy(Ship):
     COLOR_MAP = {
                 "red": (RED_SPACE_SHIP, RED_LASER),
