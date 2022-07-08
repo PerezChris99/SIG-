@@ -109,7 +109,8 @@ class Player(Ship):
                 for obj in objs:
                     if laser.collision(obj):
                         objs.remove(obj)
-                        self.lasers.remove(laser)
+                        if laser in self.lasers:
+                            self.lasers.remove(laser)
 
     def draw(self, window):
         super().draw(window)
@@ -155,7 +156,7 @@ def main():
 
     enemies = []
     wave_length = 5
-    enemy_vel = 3
+    enemy_vel = 4
 
     player_vel = 8
     laser_vel = 10
@@ -211,7 +212,7 @@ def main():
         
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                run = False
+                run = False #quit() to end the whole game and not bring up the menu when x is pressed
 
         keys = pygame.key.get_pressed()
         if keys[pygame.K_a] and player.x - player_vel > 0: #move to the left
