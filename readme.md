@@ -12,8 +12,8 @@ D - to move right (east)
 A - to move left (west)
 
 secondary controls;
-W+S - to stop moving
-W+D - to moe north east
+W+S - to stop the ship from moving forward/north
+W+D - to move north east
 W+A - to move north west
 S+D - to move south east
 S+A - to move south west
