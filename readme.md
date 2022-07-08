@@ -41,3 +41,5 @@ SOON MAKING THE GAME EXECUTABLE
 
 DISCLAIMER:
 the game wasnt initially my idea, but im learning from it.
+
+the purpose of this game was and is to polish up my python skills, both in structured and oop
