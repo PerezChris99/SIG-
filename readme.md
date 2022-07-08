@@ -38,3 +38,6 @@ NB: install pygame within the virtual environment to avoid conflicting with the 
 - pip install pygame
 
 SOON MAKING THE GAME EXECUTABLE
+
+DISCLAIMER:
+the game wasnt initially my idea, but im learning from it.
