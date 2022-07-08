@@ -6,7 +6,7 @@ pygame.font.init()
 
 WIDTH, HEIGHT = 800, 750
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("SIG-")
+pygame.display.set_caption("Space Impact Game")
 
 #loading images
 RED_SPACE_SHIP = pygame.image.load(os.path.join("assets", "pixel_ship_red_small.png"))
@@ -183,7 +183,7 @@ def main():
         if lost:
             lost_label = lost_font.render("You lost!", 1, (255,255,255))
             WIN.blit(lost_label, (WIDTH/2 - lost_label.get_width()/2, 350))
-            
+
         pygame.display.update()
 
     while run:
