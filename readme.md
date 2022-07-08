@@ -20,3 +20,9 @@ S+A - to move south west
 
 3.OBJECTIVE OF THE GAME:
 To shoot lasers at enemy ships and avoid being hit by the enemy ships and their lasers.
+
+4.PACKAGES/DEPENDENCIES/LIBRARIES USED:
+pygame
+os
+random
+time
