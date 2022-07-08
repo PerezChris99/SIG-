@@ -31,3 +31,8 @@ time
 type in cmd, within the project folder;
 - python -m venv env (this is to start virtual environment)
 - env\Scripts\activate.bat
+
+5.HOW TO INSTALL PACKAGES(PYGAME)
+NB: install pygame within the virtual environment to avoid conflicting with the real system
+
+- pip install pygame
