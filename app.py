@@ -141,10 +141,10 @@ def main():
 
     enemies = []
     wave_length = 5
-    enemy_vel = 1
+    enemy_vel = 3
 
-    player_vel = 5
-    laser_vel = 4
+    player_vel = 8
+    laser_vel = 10
     player = Player(300, 650)
 
     clock = pygame.time.Clock()
@@ -218,6 +218,6 @@ def main():
                 lives -= 1
                 enemies.remove(enemy)
 
-        player.move_lasers(laser_vel, enemies) 
+        player.move_lasers(-laser_vel, enemies) 
 main()
 
