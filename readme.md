@@ -17,3 +17,6 @@ W+D - to moe north east
 W+A - to move north west
 S+D - to move south east
 S+A - to move south west
+
+3.OBJECTIVE OF THE GAME:
+To shoot lasers at enemy ships and avoid being hit by the enemy ships and their lasers.
